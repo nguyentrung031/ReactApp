@@ -1,0 +1,86 @@
+[
+    {
+        "id":1,
+        "name": "sofa cafe",
+        "content":"sofa cafe khung gỗ tự nhiên chắc chắn SC001",
+        "price": 500.999,
+        "img": "../img/1.jpg"
+    },
+    {
+        "id":2,
+        "name": "sofa văng",
+        "content":"sofa văng bọc vải rất nổi bật",
+        "price": 400.999,
+        "img": "../img/2.jpg"
+    },
+    {
+        "id":3,
+        "name": "sofa văng cafe",
+        "content":"sofa văng cafe bọc vải Hàn Quốc SC001",
+        "price": 670.999,
+        "img": "../img/3.jpg"
+    },
+    {
+        "id":4,
+        "name": "Giường gội đầu",
+        "content":"Giường gội đầu bọc da cao cấp GD001",
+        "price": 170.999,
+        "img": "../img/4.jpg"
+    },
+    {
+        "id":5,
+        "name": "sofa văng cafe",
+        "content":"sofa văng cafe đơn giản, đẹp mắt SC002",
+        "price": 450.999,
+        "img": "../img/5.jpg"
+    },
+    {
+        "id":6,
+        "name": "sofa cafe",
+        "content":"sofa cafe bọc vải cao cấp Hàn Quốc  SCl002",
+        "price": 750.999,
+        "img": "../img/6.jpg"
+    },
+    {
+        "id":7,
+        "name": "sofa văng",
+        "content":"sofa văng bọc vải trang nhã, đơn giản",
+        "price": 150.999,
+        "img": "../img/7.jpg"
+    },
+    {
+        "id":8,
+        "name": "sofa cafe",
+        "content":"Bộ bàn ghế cafe rút khuy lưng độc đáo",
+        "price": 950.999,
+        "img": "../img/9.jpg"
+    },
+    {
+        "id":9,
+        "name": "sofa cafe",
+        "content":"sofa cafe bọc da cao cấp bóng mịn",
+        "price": 550.999,
+        "img": "../img/10.jpg"
+    },
+    {
+        "id":10,
+        "name": "sofa cafe",
+        "content":"sofa cafe khung gỗ tự nhiên chắc chắn SC001",
+        "price": 500.999,
+        "img": "../img/1.jpg"
+    },
+    {
+        "id":11,
+        "name": "sofa văng",
+        "content":"sofa văng bọc vải rất nổi bật",
+        "price": 400.999,
+        "img": "../img/2.jpg"
+    },
+    {
+        "id":12,
+        "name": "sofa văng cafe",
+        "content":"sofa văng cafe bọc vải Hàn Quốc SC001",
+        "price": 670.999,
+        "img": "../img/3.jpg"
+    }
+]
