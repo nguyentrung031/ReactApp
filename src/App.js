@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './component/header/Header';
+import Footer from './component/footer/Footer';
+// import MainHome from './component/mainHome/MainHome';
+// import MainProduct from './component/mainProduct/MainProduct';
+// import MainDetall from './component/mainDetall/MainDetall';
+import Accout from './component/account/Accout';
+// import About from './component/about/About';
+import RouterURL from './router/RouterURL';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header></Header>
+      <RouterURL></RouterURL>
+      {/* Manin-Home */}
+      {/* <MainHome></MainHome> */}
+       {/* Manin-Home */}
+        {/* Manin-Product */}
+      {/* <MainProduct></MainProduct> */}
+        {/* Manin-Product */}
+        {/* Main-Detail */}
+      {/* <MainDetall></MainDetall> */}
+        {/* Main-Detail */}
+        {/* About */}
+      {/* <About></About> */}
+         {/* About */}
+      <Footer></Footer>
+      <Accout></Accout>
     </div>
   );
 }
