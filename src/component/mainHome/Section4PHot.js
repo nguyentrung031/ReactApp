@@ -25,6 +25,7 @@ class Section4PHot extends Component {
                                             Content={value.content}></NewProduct>
                                         )
                                     }
+                                    else {return false;}
                                 })
                             }
                         </div>

@@ -25,6 +25,10 @@ class Section3PNew extends Component {
                                             Content={value.content}></NewProduct>
                                         )
                                     }
+                                    else
+                                    {
+                                        return false;
+                                    }
                                 })
                             }
                         </div>

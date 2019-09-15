@@ -15,7 +15,7 @@ class MainDetall extends Component {
                 <main>
                 {
                     data.map((value,key) => {
-                        if(value.id == this.props.match.params.id)
+                        if(value.id === parseInt(this.props.match.params.id))
                         {
                             return (
                                 <div className="detail-wrap" key={key}>
@@ -38,6 +38,7 @@ class MainDetall extends Component {
                             </div>
                             )
                         }
+                        else {return false;}
                         
                     })
                 }
@@ -47,7 +48,7 @@ class MainDetall extends Component {
                         <div className="row slide-one">
                             {
                                 data.map((value,key) => {
-                                    if(value.id != this.props.match.params.id)
+                                    if(value.id !== parseInt(this.props.match.params.id))
                                     {
                                         if(dem<= 6){
                                             dem++;
@@ -60,7 +61,7 @@ class MainDetall extends Component {
                                             )
                                         }
                                     } 
-                                    
+                                    return true;
                                 })
                             }
                         </div>

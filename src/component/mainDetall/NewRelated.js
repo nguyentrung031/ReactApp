@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 class NewRelated extends Component {
-    constructor(props) {
-        super(props);
+    // constructor(props) {
+    //     super(props);
     
-    }
+    // }
     toSlug = (str) =>{
         // Chuyển hết sang chữ thường
             str = str.toLowerCase();     

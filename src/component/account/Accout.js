@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    Redirect,
-    withRouter
+    BrowserRouter as 
+    Redirect
   } from "react-router-dom";
 
 class Accout extends Component {
@@ -21,18 +18,20 @@ class Accout extends Component {
         }
     }
     // đăng ký
-    sumbmitFromRegis = () => {
-        this.preventDefault();
+    sumbmitFromRegis = (event) => {
+        event.preventDefault();
         this.setState({
             isRedirectRegis: true
         });
+        
     }
     // đăng nhập
-    submitFromLog = () => {
-        this.preventDefault(); //stop, ko cho chạy lại trang
+    submitFromLog = (event) => {
+        event.preventDefault(); //stop, ko cho chạy lại trang
         this.setState({
             isRedirectLog:true
         });
+        
     }
     // nhận ký tự của from đăng ký
     isChange = (event) => {
@@ -53,7 +52,8 @@ class Accout extends Component {
         Content += "/ Email is: " + this.state.email;
         return Content;
     }
-        
+    
+    
     
     render() {
         if(this.state.isRedirectRegis){
@@ -91,7 +91,7 @@ class Accout extends Component {
                                 <div className="valid-feedback">Valid.</div>
                                 <div className="invalid-feedback">Please fill out this field.</div>
                                 </div>
-                                <button onClick={() => this.submitFromLog()} type="submit" className="btn btn-primary" style={{backgroundColor: '#00a99d'}}>Sign In</button>
+                                <button onClick={(event) => this.submitFromLog(event)} type="submit" className="btn btn-primary" style={{backgroundColor: '#00a99d'}}>Sign In</button>
                             </form>
                             </div>
                         </div>
@@ -108,7 +108,7 @@ class Accout extends Component {
                             </button>
                             </div>
                             <div className="modal-body">
-                            <form className="needs-validation" noValidate>
+                            <form action="/" className="needs-validation" noValidate>
                                 <div className="form-group">
                                 <label htmlFor="Fullname" style={{fontFamily: 'serif'}}>full name:</label>
                                 <input onChange={(event) => this.isChange(event)} type="text" className="form-control" id="uname" placeholder="Enter full name" name="fullname" required />
@@ -139,7 +139,7 @@ class Accout extends Component {
                                 <div className="valid-feedback">Valid.</div>
                                 <div className="invalid-feedback">Please fill out this field.</div>
                                 </div>
-                                <button onClick={() => this.sumbmitFromRegis()} type="submit" className="btn btn-primary" style={{backgroundColor: '#00a99d'}}>Create</button>
+                                <button onClick={(event) => this.sumbmitFromRegis(event)} type="submit" id="dk01" className="btn btn-primary" style={{backgroundColor: '#00a99d'}}>Create</button>
                             </form>
                             </div>
                         </div>

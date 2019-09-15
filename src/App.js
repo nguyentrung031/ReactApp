@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router} from "react-router-dom";
 import Header from './component/header/Header';
 import Footer from './component/footer/Footer';
 // import MainHome from './component/mainHome/MainHome';
@@ -10,6 +11,7 @@ import RouterURL from './router/RouterURL';
 
 function App() {
   return (
+    <Router>
     <div>
       <Header></Header>
       <RouterURL></RouterURL>
@@ -28,6 +30,7 @@ function App() {
       <Footer></Footer>
       <Accout></Accout>
     </div>
+    </Router>
   );
 }
 
